@@ -8,7 +8,6 @@ describe('Calculator', function() {
 
   it('will calculate earth years to mercury years', function() {
     var user = new Calculator('asia', '1');
-    console.log(user);
     expect(user.mercury()).toEqual('0.24');
   });
 
@@ -34,32 +33,31 @@ describe('Calculator', function() {
 
   it('will return your life expectancy on each planet according to geographical homeland', function() {
     var user = new Calculator('asia', '1');
-    expect(user.deathCalculator()).toEqual('Your life expectancy on Mercury is: 17.52 years, on Venus: 45.26 years, on Mars: 137.23999999999998 years, and on Jupiter: 865.78 years!')
+    expect(user.deathCalculator()).toEqual('You are expected to live 17.28 more Mercury years on Mercury, 44.64 more Venus years on Venus, 135.35999999999999 more Mars years on Mars, and 853.92 more Jupiter years on Jupiter!')
   });
 
   it('will return your life expectancy on each planet according to geographical homeland', function() {
     var user = new Calculator('europe', '1');
-    expect(user.deathCalculator()).toEqual('Your life expectancy on Mercury is: 18.72 years, on Venus: 48.36 years, on Mars: 146.64 years, and on Jupiter: 925.0799999999999 years!')
+    expect(user.deathCalculator()).toEqual('You are expected to live 18.48 more Mercury years on Mercury, 47.74 more Venus years on Venus, 144.76 more Mars years on Mars, and 913.2199999999999 more Jupiter years on Jupiter!')
   });
 
   it('will return your life expectancy on each planet according to geographical homeland', function() {
     var user = new Calculator('northAmerica', '1');
-    expect(user.deathCalculator()).toEqual('Your life expectancy on Mercury is: 18.96 years, on Venus: 48.98 years, on Mars: 148.51999999999998 years, and on Jupiter: 936.9399999999999 years!')
+    expect(user.deathCalculator()).toEqual('You are expected to live 18.720000000000002 more Mercury years on Mercury, 48.36 more Venus years on Venus, 146.64 more Mars years on Mars, and 925.0799999999999 more Jupiter years on Jupiter!')
   });
 
   it('will return your life expectancy on each planet according to geographical homeland', function() {
     var user = new Calculator('oceania', '1');
-    expect(user.deathCalculator()).toEqual('Your life expectancy on Mercury is: 18.48 years, on Venus: 47.74 years, on Mars: 144.76 years, and on Jupiter: 913.2199999999999 years!')
+    expect(user.deathCalculator()).toEqual('You are expected to live 18.240000000000002 more Mercury years on Mercury, 47.120000000000005 more Venus years on Venus, 142.88 more Mars years on Mars, and 901.3599999999999 more Jupiter years on Jupiter!')
   });
 
   it('will return your life expectancy on each planet according to geographical homeland', function() {
     var user = new Calculator('africa', '1');
-    expect(user.deathCalculator()).toEqual('Your life expectancy on Mercury is: 15.12 years, on Venus: 39.06 years, on Mars: 118.44 years, and on Jupiter: 747.18 years!')
+    expect(user.deathCalculator()).toEqual('You are expected to live 14.879999999999999 more Mercury years on Mercury, 38.440000000000005 more Venus years on Venus, 116.56 more Mars years on Mars, and 735.3199999999999 more Jupiter years on Jupiter!')
   });
 
   it('will return your life expectancy on each planet according to geographical homeland', function() {
     var user = new Calculator('latinAmerica', '1');
-    expect(user.deathCalculator()).toEqual('Your life expectancy on Mercury is: 18.24 years, on Venus: 47.12 years, on Mars: 142.88 years, and on Jupiter: 901.3599999999999 years!')
+    expect(user.deathCalculator()).toEqual('You are expected to live 18 more Mercury years on Mercury, 46.5 more Venus years on Venus, 141 more Mars years on Mars, and 889.4999999999999 more Jupiter years on Jupiter!')
   });
-
 });
