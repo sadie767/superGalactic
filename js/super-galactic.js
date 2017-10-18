@@ -2,38 +2,46 @@ export class Calculator {
   constructor(region, age) {
   this.region = region;
   this.age = age;
+  this.newAge = 0;
   }
 
   secondConverter() {
-    let year = parseInt(this.age);
-    let secondParsed = parseInt('31536000')
+    let year = (this.age);
+    let secondParsed = ('31536000')
     let calculate = secondParsed * year;
     return calculate.toString();
   }
 
+  birthday() {
+    let now = new Date();
+    let year = new Date(this.age);
+    let ageCalc = now.getFullYear() - year.getFullYear();
+    return ageCalc
+  }
+
   mercury(){
-    let earth = parseFloat(this.age);
+    let earth = this.birthday();
     let mercuryParsed = parseFloat('.24');
     let calculate = earth * mercuryParsed;
     return calculate.toString();
   }
 
   venus(){
-    let earth = parseFloat(this.age);
+    let earth = this.birthday();
     let venusParsed = parseFloat('.62');
     let calculate = earth * venusParsed;
     return calculate.toString();
   }
 
   mars(){
-    let earth = parseFloat(this.age);
+    let earth = this.birthday();
     let marsParsed = parseFloat('1.88');
     let calculate = earth * marsParsed;
     return calculate.toString();
   }
 
   jupiter(){
-    let earth = parseFloat(this.age);
+    let earth = this.birthday();
     let jupiterParsed = parseFloat('11.86');
     let calculate = earth * jupiterParsed;
     return calculate.toString();
@@ -41,7 +49,7 @@ export class Calculator {
 
   deathCalculator() {
 
-    let earth = parseInt(this.age);
+    let earth = this.birthday();
 
     let mercuryParsed = parseFloat('.24');
     let venusParsed = parseFloat('.62');

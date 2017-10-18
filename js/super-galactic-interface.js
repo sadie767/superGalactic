@@ -4,7 +4,7 @@ $(document).ready(function() {
   $("form#calculatorForm").submit(function(event) {
     event.preventDefault();
     let homeSubmit = $("#home").val();
-    let calculatorSubmit = $("#calculator").val();
+    let calculatorSubmit = parseFloat($("#calculator").val());
 
     let calculatorInput = new Calculator(homeSubmit, calculatorSubmit);
     let jupiterResult = calculatorInput.jupiter();
